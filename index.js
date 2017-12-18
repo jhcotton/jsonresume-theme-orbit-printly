@@ -55,6 +55,11 @@ Handlebars.registerHelper('skillLevel', function(str) {
 	}
 });
 
+// Usage: {{log str}}
+Handlebars.registerHelper('log', function(str) {
+	console.log(str)
+});
+
 // Resume.json used to have website property in some entries.  This has been renamed to url.
 // However the demo data still uses the website property so we will also support the "wrong" property name.
 // Fix the resume object to use url property

@@ -14,6 +14,15 @@
                 <div class="details">
                     {{#markdown}}{{summary}}{{/markdown}}
                 </div><!--//details-->
+                {{#if highlights.length}}
+                    <div class="highlight-container">
+                        <ul class="list-styled highlight-list">
+                            {{#each highlights}}
+                                <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+                    </div><!--//highlights-->
+                {{/if}}
             </div><!--//item-->
         {{/resume.work}}
     </section><!--//section-->
