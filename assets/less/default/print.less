@@ -1,0 +1,74 @@
+@publications-section-display: none;
+@summary-section-display: none;
+@profile-image-display: none;
+
+@media print {
+    a[href]:after {
+        content: none !important;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    .wrapper {
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .sidebar-wrapper {
+        position: static;
+        width: inherit;
+        min-height: 0;
+        .container-block {
+            padding: 15px;
+        }
+        .profile-container {
+            padding: 0;
+        }
+        .profile {
+            display: @profile-image-display;
+            margin: 0;
+        }
+        .contact-list {
+            li {
+                margin: 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .main-wrapper {
+        padding: 15px;
+        min-height: 0;
+        .section-title {
+            margin-bottom: 10px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .experiences-section {
+            .item {
+                margin-bottom: 30px;
+            }
+        }
+        .summary-section {
+            display: @summary-section-display;
+        }
+        .publications-section {
+            display: @publications-section-display;
+        }
+    }
+
+    .skillset {
+        .item {
+            margin-bottom: 5px;
+        }
+        .level-bar {
+            display: none;
+        }
+    }
+}
