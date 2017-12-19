@@ -4,10 +4,11 @@
         <div class="skillset">
             {{#resume.skills}}
                 <div class="item">
-                    <h3 class="level-title">{{name}}</h3>
-                    <div class="level-bar">
-                        <div class="level-bar-inner" data-level="{{skillLevel level}}">
-                        </div>
+                        <h3 class="level-title">{{name}}</h3>
+                        <div class="keyword-title">{{skills keywords}}</div>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="{{skillLevel level}}">
+                            </div>
                     </div><!--//level-bar-->
                 </div><!--//item-->
             {{/resume.skills}}

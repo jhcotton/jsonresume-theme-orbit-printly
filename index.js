@@ -55,6 +55,17 @@ Handlebars.registerHelper('skillLevel', function(str) {
 	}
 });
 
+Handlebars.registerHelper('skills', function(array) {
+	let builder = "";
+	for (var i=0; i < array.length; i++) {
+		if (builder.length > 0) {
+			builder = builder + ", ";
+		}
+		builder = builder + array[i];
+	}
+	return builder;
+});
+
 // Usage: {{log str}}
 Handlebars.registerHelper('log', function(str) {
 	console.log(str)
