@@ -10,6 +10,9 @@
     body {
         padding: 10px;
     }
+    h1, h2, h3, h4, h5, h6  {
+        font-weight: @font-weight-6;
+    }
 
     .wrapper {
         margin: 0;
@@ -31,6 +34,19 @@
             display: @profile-image-display;
             margin: 0;
         }
+        .name {
+            font-size: 24px;
+            font-weight: @font-weight-8;
+            margin-bottom: 4px;
+        }
+        .profile-info {
+            margin-top: 4px;
+            margin-bottom: 0;
+        }
+        .contact-container {
+            text-align: center;
+            padding-top: 8px;
+        }
         .contact-list {
             li {
                 margin: 0;
@@ -38,6 +54,12 @@
             &:last-child {
                 margin-bottom: 0;
             }
+            .network {
+                display: none;
+            }
+        }
+        .container-block-title {
+            font-weight: @font-weight-6;
         }
     }
 

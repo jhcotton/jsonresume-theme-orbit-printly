@@ -2,6 +2,7 @@ var fs = require("fs");
 var path = require('path');
 var Handlebars = require("handlebars");
 var markdown = require('helper-markdown');
+var zipcodes = require('zipcodes');
 
 Handlebars.registerHelper('markdown', function() {
 	var markup = markdown().apply(this, arguments);
@@ -64,6 +65,13 @@ Handlebars.registerHelper('skills', function(array) {
 		builder = builder + array[i];
 	}
 	return builder;
+});
+
+Handlebars.registerHelper('location', function(zip) {
+	const location = zipcodes.lookup(zip);
+	if (location) {
+		return location.city + ", " + location.state;
+	}
 });
 
 // Usage: {{log str}}

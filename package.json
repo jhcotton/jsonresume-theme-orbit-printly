@@ -23,7 +23,8 @@
   },
   "dependencies": {
     "handlebars": "^4.0.11",
-    "helper-markdown": "^1.0.0"
+    "helper-markdown": "^1.0.0",
+    "zipcodes": "^6.0.0"
   },
   "devDependencies": {
     "less": "^2.7.3",
