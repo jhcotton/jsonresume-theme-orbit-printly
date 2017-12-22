@@ -1,17 +1,20 @@
 @publications-section-display: none;
 @summary-section-display: none;
 @profile-image-display: none;
+@zoom: 1.0;
 
 @media print {
     a[href]:after {
         content: none !important;
     }
-
     body {
         padding: 10px;
     }
     h1, h2, h3, h4, h5, h6  {
         font-weight: @font-weight-6;
+    }
+    html {
+        zoom: @zoom;
     }
 
     .wrapper {
