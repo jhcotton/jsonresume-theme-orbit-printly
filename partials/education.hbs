@@ -1,12 +1,14 @@
 {{#if resume.education}}
-    <div class="education-container container-block">
-        <h2 class="container-block-title">Education</h2>
+    <section class="section education-section">
+        <h2 class="section-title"><i class="fa fa-graduation-cap"></i>Education</h2>
         {{#resume.education}}
-            <div class="item">
-                <h4 class="degree">{{award studyType}} in {{area}}</h4>
-                <h5 class="meta">{{institution}}</h5>
-                <div class="time">{{year startDate}} - {{year endDate}}</div>
-            </div><!--//item-->
+            <div class="meta">
+                <div class="upper-row">
+                    <h4 class="degree">{{award studyType}} in {{area}}</h4>
+                    <h5 class="meta">{{institution}}</h5>
+                    <div class="time">{{year startDate}} - {{year endDate}}</div>
+                </div><!--//upper-row-->
+            </div><!--//meta-->
         {{/resume.education}}
-    </div><!--//education-container-->
+    </section><!--//section-->
 {{/if}}

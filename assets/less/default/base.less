@@ -44,126 +44,10 @@ p {
     .box-shadow(0px 2px 4px rgba(0,0,0,0.1));
 }
 
-.sidebar-wrapper {
-    background: @theme-color;
-    position: absolute;
-    right: 0;
-    width: @sidebar-width;
-    height: 100%;
-    min-height: @sidebar-minheight;
-    color: #fff;
-    a {
-        color: #fff;
-    }
-    .profile-container {
-        padding: 30px;
-        //background: darken(@theme-color, 10%);
-        background: rgba(0, 0, 0, 0.2);
-        text-align: center;
-        color: #fff;
-    }
-    .name {
-        font-size: 32px;
-        font-weight: @font-weight-10;
-        margin-top: 0;
-        margin-bottom: 10px;
-    }
-    .profile-info {
-        color: rgba(256, 256, 256, 0.6);
-        font-size: 16px;
-        font-weight: @font-weight-4;
-        margin-top: 0;
-        margin-bottom: 8px;
-    }
-    .location {
-        margin-bottom: 0;
-    }
-    .profile {
-        margin-bottom: 15px;
-    }
-    .contact-list {
-        .fa {
-            margin-right: 5px;
-            font-size: 18px;
-            vertical-align: middle;
-        }
-        li {
-            margin-bottom: 15px;
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-        .email {
-            .fa {
-                font-size: 14px;
-            }
-        }
-    }
-    .container-block {
-        padding: 30px;
-    }
-    .container-block-title {
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: @font-weight-8;
-        margin-top: 0;
-        margin-bottom: 15px;
-    }
-    .degree {
-        font-size: 14px;
-        margin-top: 0;
-        margin-bottom: 5px;
-    }
-    .education-container {
-        .item {
-            margin-bottom: 15px;
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-        .meta {
-            color: rgba(256, 256, 256, 0.6);
-            font-weight: @font-weight-6;
-            margin-bottom: 0px;
-            margin-top: 0;
-        }
-        .time {
-            color: rgba(256, 256, 256, 0.6);
-            font-weight: @font-weight-6;
-            margin-bottom: 0px;
-        }
-    }
-    .languages-container {
-        .lang-desc {
-            color: rgba(256, 256, 256, 0.6);
-        }
-    }
-    
-    .languages-list {
-        margin-bottom: 0;
-        li {
-            margin-bottom: 10px;
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-    }
-    
-    .interests-list {
-        margin-bottom: 0;
-        li {
-            margin-bottom: 10px;
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-    }
-}
-
 .main-wrapper {
     background: #fff;
     padding: 60px;
-    padding-right: @sidebar-width + 60px;
+    padding-right: 60px;
     min-height: @sidebar-minheight;
     .section-title {
         text-transform: uppercase;
@@ -255,32 +139,83 @@ p {
             margin-bottom: 15px;
         }
     }
-    
-}
 
-
-.skillset {
-    .item {
-        margin-bottom: 20px;
-        overflow: hidden;
-    }
-    .keyword-title {
-        color: @text-grey;
-        font-size: 14px;
-        margin-bottom: 4px;
-    }
-    .level-title {
-        font-size: 14px;
+    .name {
+        font-size: 32px;
+        font-weight: @font-weight-10;
         margin-top: 0;
-        margin-bottom: 4px;
+        margin-bottom: 0px;
     }
-    .level-bar {
-        height: 12px;
-        background: @smoky-white;
+    .profile-info {
+        color: rgba(256, 256, 256, 0.6);
+        font-size: 16px;
+        font-weight: @font-weight-4;
+        margin-top: 0;
+        margin-bottom: 0px;
     }
-    .level-bar-inner {
-        height: 12px;
-        background: lighten(@theme-color, 15%);
+    .location {
+        margin-bottom: 0;
+    }
+    .profile {
+        margin-bottom: 15px;
+    }
+    .contact-list {
+        .fa {
+            margin-right: 5px;
+            font-size: 18px;
+            vertical-align: middle;
+        }
+        li {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .email {
+            .fa {
+                font-size: 14px;
+            }
+        }
+    }
+    .contact-container {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .container-block {
+        padding: 0px;
+    }
+    .container-block-title {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: @font-weight-8;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .skillset {
+        .item {
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .keyword-title {
+            color: @text-grey;
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+        .level-title {
+            font-size: 14px;
+            margin-top: 0;
+            margin-bottom: 4px;
+        }
+        .level-bar {
+            height: 12px;
+            background: @smoky-white;
+        }
+        .level-bar-inner {
+            height: 12px;
+            background: lighten(@theme-color, 15%);
+        }
     }
 }
 
