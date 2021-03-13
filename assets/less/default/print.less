@@ -1,6 +1,5 @@
 @publications-section-display: none;
-@summary-section-display: none;
-@profile-image-display: none;
+@summary-section-display: unset;
 @zoom: 1.0;
 
 @media print {
@@ -8,7 +7,7 @@
         content: none !important;
     }
     body {
-        padding: 10px;
+        padding: 0;
     }
     h1, h2, h3, h4, h5, h6  {
         font-weight: @font-weight-6;
@@ -17,63 +16,31 @@
         zoom: @zoom;
     }
 
+    p {
+        line-height: 1.5;
+    }
+
     .wrapper {
         margin: 0;
         padding: 0;
         box-shadow: none;
     }
 
-    .sidebar-wrapper {
-        position: static;
-        width: inherit;
-        min-height: 0;
-        .container-block {
-            padding: 15px;
-        }
-        .profile-container {
-            padding: 0;
-        }
-        .profile {
-            display: @profile-image-display;
-            margin: 0;
-        }
-        .name {
-            font-size: 24px;
-            font-weight: @font-weight-8;
-            margin-bottom: 4px;
-        }
-        .profile-info {
-            margin-top: 4px;
-            margin-bottom: 0;
-        }
-        .contact-container {
-            text-align: center;
-            padding-top: 8px;
-        }
-        .contact-list {
-            li {
-                margin: 0;
-            }
-            &:last-child {
-                margin-bottom: 0;
-            }
-            .network {
-                display: none;
-            }
-        }
-        .container-block-title {
-            font-weight: @font-weight-6;
-        }
-    }
-
     .main-wrapper {
-        padding: 15px;
+        padding: 0;
         min-height: 0;
         .section-title {
             margin-bottom: 10px;
+            .fa {
+                display: none;
+            }
         }
         .section {
+            margin-top: 20px;
             margin-bottom: 20px;
+        }
+        .profile-section {
+            margin-bottom: 30px;
         }
         .experiences-section {
             .item {
@@ -86,14 +53,47 @@
         .publications-section {
             display: @publications-section-display;
         }
+
+        .name {
+            font-size: 30px;
+            font-weight: @font-weight-8;
+            margin-bottom: 4px;
+        }
+        .profile-info {
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
+        .contact-container {
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        .contact-list {
+            li {
+                margin: 0;
+                margin-bottom: 12px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .network {
+                display: none;
+            }
+        }
+        .container-block-title {
+            font-weight: @font-weight-6;
+        }
+
+        .skillset {
+            .item {
+                margin-bottom: 5px;
+            }
+            .level-bar {
+                display: none;
+            }
+        }
     }
 
-    .skillset {
-        .item {
-            margin-bottom: 5px;
-        }
-        .level-bar {
-            display: none;
-        }
+    .footer {
+        display: none;
     }
 }
